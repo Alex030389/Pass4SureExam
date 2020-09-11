@@ -1,0 +1,112 @@
+.form {
+
+  &__input {
+    display: block;
+    padding: 10px 12px 11px 12px;
+    border: 1px solid #E4E4E4;
+    border-radius: 2px;
+    width: 100%;
+
+    &::placeholder {
+      color: $c-placeholder;
+      font-weight: 300;
+    }
+
+    &.error {
+      border-color: $c-secondary !important;
+
+      &::placeholder {
+        color: $c-secondary !important;
+      }
+    } 
+  }
+
+  &__checkbox-input {
+    display: none;
+  }
+
+  &__checkbox-label {
+    position: relative;
+    padding: 0 0 0 26px;
+    cursor: pointer;
+    display: block;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background: url(../images/icon/notepad.svg) center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__checkbox-input + .form__checkbox-label:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    width: 11px;
+    height: 11px;
+    transition: .2s;
+    background: url(../images/icon/checked.svg) no-repeat center center;
+    background-size: cover;
+    opacity: 0;
+  }
+
+  &__checkbox-input:checked + .form__checkbox-label:after {
+    opacity: 1;
+  }
+}
+
+.selectric-wrapper {
+
+  .selectric {
+    background-color: #fff;
+    border-color: #E4E4E4;
+    border-radius: 2px;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+
+  .button {
+    background-color: #fff;
+  }
+
+  .selectric-scroll {
+    background-color: #fff;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: rgba(230, 230, 230, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #E4E4E4;
+    }
+  }
+
+  .selectric-items li {
+    font-size: 16px;
+
+    &:hover {
+      background-color: rgba(230, 230, 230, 0.3);
+    }
+  }
+
+  .selectric-items li.disabled {
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    display: none;
+  }
+
+  .selected  {
+    background-color: rgb(240, 240, 240) !important;
+  }
+
+}

@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $ff-main;
+  font-size: $fsz-main;
+  color: $c-main;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: $fsz-h1;
+  font-weight: 400;
+  // text-align: center;
+  margin: 0 0 30px;
+
+  @media (max-width: $sm) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: $fsz-h1;
+  font-weight: 400;
+  margin: 0 0 30px;
+
+  @media (max-width: $sm) {
+    font-size: 24px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $c-main;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+
+::-ms-clear {
+  display: none;
+}
+
+:-webkit-autofill {
+  box-shadow: 0 0 500px #fff inset;
+  -webkit-text-fill-color: currentColor;
+}
+
+input,
+select,
+button {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.5;
+}
+
+// button:active,
+// button:focus,
+// input:active,
+// input:focus,
+// textarea {
+//   outline: none;
+//   // -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+// }
+
+// button::-moz-focus-inner,
+// input::-moz-focus-inner {
+//   border: 0;
+// }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden
+// label:active 
+{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.content {
+  display: block; // ie11 не поддерживает main
+  flex-grow: 1;
+}
+
+.section {
+  position: relative;
+  padding: 40px 0;
+
+  @media (max-width: $sm) {
+    padding: 25px 0;
+  }
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 0 30px;
+
+  @media (max-width: $lg) {
+    padding: 0 15px;
+  }
+}

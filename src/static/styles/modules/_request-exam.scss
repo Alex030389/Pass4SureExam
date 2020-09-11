@@ -1,0 +1,107 @@
+.req-exam {
+  height: 100%;
+
+  .wrap {
+    position: relative;
+    height: 100%;
+  }
+
+  &__h1 {
+
+  }
+
+  &__form {
+    margin-top: 25px;
+    max-width: 465px;
+    width: 100%;
+    padding: 1px 30px 25px;
+    background: #FFFEFC;
+    box-shadow: 0px 4px 8px rgba(39, 39, 39, 0.08);
+
+    @media (max-width: $sm) {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0
+    }
+
+    & * {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 25px;
+  }
+
+
+
+  &__img {
+    width: 170px;
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+
+    @media (max-width: 690px) {
+      display: none;
+    }
+  }
+}
+
+#phone-flags {
+  padding-left: 70px;
+}
+
+.iti.iti--allow-dropdown {
+  display: block;
+}
+
+.iti__flag-container {
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 1px;
+    background-color:red;
+    height: 10px;
+  }
+}
+
+.iti__selected-flag {
+  padding-left: 12px;
+  padding-right: 9px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 1px;
+    background-color:#EFEFEF;
+    height: 70%;
+
+  }
+}
+
+.iti__arrow {
+  width: 15px;
+  background-color: red;
+  height: 10px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background: url(../images/icon/arrflag.svg) no-repeat center center;
+  // background-size: cover;
+  // margin-right: 3px;
+  opacity: .3;
+
+  &.iti__arrow--up {
+    transform: rotate(180deg);
+  }
+}
+
+.iti__arrow--up {
+  border-bottom: none;
+}

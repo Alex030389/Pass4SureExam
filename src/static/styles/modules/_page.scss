@@ -1,0 +1,51 @@
+.page {
+
+  h1 {
+    // margin-bottom: 20px;
+    margin-bottom: 15px;
+
+    & + h2 {
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+
+    @media (max-width: $sm) {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  p {
+    @media (max-width: $sm) {
+      margin: 8px 0;
+    }
+  }
+  
+  a {
+    border-bottom: 1px solid $c-main-03;
+    transition: .3s;
+
+    &:hover {
+      color: $c-secondary;
+      border-color: $c-secondary;
+    }
+  }
+
+  ul {
+    line-height: 1.5;
+
+    li {
+      margin-bottom: 10px;
+
+      & > span {
+        color: $c-secondary;
+        margin-right: 7px;
+      }
+    }
+  }
+}

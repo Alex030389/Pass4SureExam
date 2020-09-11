@@ -1,0 +1,89 @@
+.contact {
+
+  display: flex;
+  justify-content: space-between; 
+  padding-bottom: 8px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgb(245, 245, 245), rgb(104, 104, 104));
+
+    @media (max-width: $sm) {
+      height: 0;
+    }
+  }
+
+  &__h1 {
+    @media (max-width: $sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__box-message {
+    max-width: 315px;
+    width: 100%;
+
+    p {
+      & > * :not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: $sm) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-bottom: 13px;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  &__box-text {
+    max-width: 315px;
+    width: 100%;
+    opacity: .7;
+
+    p:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__box-img {
+
+    img {
+
+    }
+
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $lg) {
+    padding-bottom: 40px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+//= modules/head.html
+
+<body>
+
+  //= modules/header/header.html
+
+  <main class="content">
+    <div class="wrap">
+      //= modules/breadcrumb.html
+    </div>
+
+
+    <div class="steps-box wrap">
+
+      <!-- ============================================================== c-order -->
+      <section class="section c-order">
+
+        <h1 class="c-order__h1">Review your order</h1>
+        <p class="c-order__desc">* - In order to avoid duplicate orders only 1 copy of each product can be
+          purchased.<br>
+          If you are interested in multiple copies please contact support@pass4sureexam.com</p>
+        <div class="c-order__cart cart" data-action="#">
+          <table class="cart__table">
+            <thead>
+              <tr class="cart">
+                <td>Description</td>
+                <td>Total</td>
+                <td></td>
+              </tr>
+            </thead>
+            <tbody class="cart__product-list">
+
+              <tr class="cart__product" data-id="1">
+                <td class="cart__col-name">HT0-201 (PDF + Testing Engine) 1</td>
+                <td class="cart__col-total">
+                  <div class="cart__col-old-price">50% OFF <span class="line-throught">$149,99</span></div>
+                  <div class="cart__col-new-price">$74,99</div>
+                </td>
+                <td class="cart__box-btn-remove">
+                  <button class="cart__btn-remove">
+                    <svg aria-hidden="true">
+                      <use xlink:href="static/images/sprite/symbol/sprite.svg#bin"></use>
+                    </svg>
+                    <span class="cart__link">Remove</span>
+                  </button>
+                </td>
+              </tr>
+
+            </tbody>
+            <tfoot>
+              <tr class="cart__tr-current-total">
+                <td colspan="2">
+                  <div class="cart__box-discount-total">
+
+                    <!-- <form action="#" class="cart__form-discount form">
+                      <label for="cart__form-input">
+                        Add discount code below and apply (if you have any)
+                      </label>
+                      <div class="cart__box-input-btn">
+                        <input class="cart__form-input form__input" id="cart__form-input" type="text"
+                          placeholder="Enter your request">
+
+                        <button class="cart__discount-btn btn btn_light">Apply</button>
+                      </div>
+                    </form> -->
+
+
+                    <!-- Этот блок будет появляться вместо .cart__form-discount -->
+                    <!-- В data-utl вписать action чтобы по ajax сделать отмену дисконта -->
+                    <div class="cart__discount-response" data-url="">
+                      <span>Promotion code 'MIN10OFF': 50% discount</span>
+                      <button class="cart__btn-remove-discount cart__link">Remove</button>
+                    </div>
+
+
+                    <div class="cart__box-amount">
+                      <div class="cart__old-amount">
+                        <span class="cart__amount-label">Subtotal:</span>
+                        <span class="cart__amount">$949.89</span>
+                      </div>
+                      <div class="cart__discount">
+                        <span class="cart__amount-label">Discount:</span>
+                        <span class="cart__amount">$20</span>
+                      </div>
+                      <div class="cart__new-amount">
+                        <span class="cart__amount-label">Total:</span>
+                        <span class="cart__amount">$745.89</span>
+                      </div>
+                    </div>
+                    <!-- /cart__box-amount -->
+
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+          <!-- /c-order__cart -->
+        </div>
+      </section>
+
+      <!-- ============================================================== billing -->
+      <form class="form-payment" action="www.mysite">
+        <section class="section billing">
+          <h2>Security Billing Information</h2>
+          <div class="billing__box">
+            <p>
+              <label>
+                First Name*
+                <input class="form__input" type="text" name="first-name" placeholder="Enter your request">
+              </label>
+            </p>
+            <p>
+              <label>
+                Last Name*
+                <input class="form__input" type="text" name="last-name" placeholder="Enter your request">
+              </label>
+            </p>
+            <p>
+              <label>
+                Country
+                <select class="form__input form__select" name="country">
+                  <option value="" disabled selected>Enter your request</option>
+                  <option>Two</option>
+                  <option>Three</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                  <option>Four</option>
+                </select>
+              </label>
+            </p>
+            <p>
+              <label>
+                City
+                <input class="form__input" type="text" name="city" placeholder="Enter your request">
+              </label>
+            </p>
+            <p>
+              <label>
+                Address
+                <input class="form__input" type="text" name="address" placeholder="Enter your request">
+              </label>
+            </p>
+            <p>
+              <label>
+                Zip/Portal Code
+                <input class="form__input" type="text" name="zip" placeholder="Enter your request">
+              </label>
+            </p>
+            <p>
+              <label>
+                E-mail
+                <input class="form__input" type="email" name="email" placeholder="Enter your e-mail address">
+              </label>
+            </p>
+          </div>
+          <button type="submit" class="form-payment__btn btn btn_red">Pay Now</button>
+        </section>
+      </form>
+    </div>
+  </main>
+
+  //= modules/footer/footer.html
+
+  //= modules/scripts.html
+
+</body>
+
+</html>

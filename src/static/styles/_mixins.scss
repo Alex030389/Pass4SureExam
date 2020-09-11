@@ -1,0 +1,6 @@
+// @include size(5px);
+
+@mixin size($a,$b: $a) {
+  width: $a;
+  height: $b;
+}

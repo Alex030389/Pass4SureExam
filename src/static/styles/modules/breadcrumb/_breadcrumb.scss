@@ -1,0 +1,20 @@
+.breadcrumb {
+  display: flex;
+  padding-top: 15px;
+  flex-wrap: wrap;
+
+  &__item {
+  }
+  
+  &__link {
+    position: relative;
+    margin-right: 10px;
+
+    &:after {
+      content: "/";
+      position: absolute;
+      top: 0;
+      right: -8px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import "fonts";
+@import "vars";
+@import "extends";
+@import "mixins";
+@import "common";
+
+// modules
+@import "modules/logo/logo";
+@import "modules/search/searchForm";
+@import "modules/nav/mainNav";
+@import "modules/nav/subnav";              // подменю в header
+@import "modules/buttons/buttons";
+@import "modules/buttons/up";
+@import "modules/nav/fNav";               // навигация в футере
+@import "modules/breadcrumb/breadcrumb";
+@import "modules/form/form";               // форма с радиокнопками в товаре
+@import "modules/modal/modal";
+@import "modules/box-rating/boxRat";      // звездочки рейтинга и дополнительная информация
+@import "modules/for-this/forThis";       // слайдер без фото
+@import "modules/nav/pagination";
+@import "modules/nav/navVert";
+@import "modules/modal/modalVideo";
+@import "modules/modal/modalAjax";
+
+
+// header
+@import "modules/header/header";
+
+
+// pages
+@import "modules/index";
+@import "modules/product";
+@import "modules/certifications";
+@import "modules/vendor";
+@import "modules/training";
+@import "modules/course";
+@import "modules/certAll";
+@import "modules/faq";
+@import "modules/contact";
+@import "modules/searchResults";
+@import "modules/page";
+@import "modules/registerNow";
+@import "modules/request-exam";
+@import "modules/account";
+@import "modules/cart";
+@import "modules/p404";
+@import "modules/invoices";
+
+
+// footer
+@import "modules/footer/footer";
+
+
+.invalid-feedback {
+  color: red;
+  text-align: center;
+  padding: 15px 0 10px;
+}
+
+.alert-success {
+  color: rgb(5, 170, 5);
+  text-align: center;
+  padding: 15px 0 10px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible-flex {
+  display: flex;
+}
+
+.placeholder-transparent {
+  &::placeholder {
+    color: $c-main;
+    opacity: 0;
+  }
+}

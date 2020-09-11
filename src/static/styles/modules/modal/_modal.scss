@@ -1,0 +1,482 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  background-color: $bc-popup;
+  overflow-y: auto;
+  z-index: 1000;
+
+  &__content {
+    background-color: $bc-footer;
+    padding: 40px 30px 20px;
+    max-width: 860px;
+    width: 100%;
+    position: relative;
+    margin: 20vh auto 50px;
+
+    @media (max-width: $md) {
+      margin-top: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__img-people {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    width: 270px;
+
+    @media (max-width: 880px) {
+      width: 200px;
+      top: 210px;
+    }
+
+    @media (max-width: 580px) {
+      display: none;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      fill: $c-main;
+      opacity: .5;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+
+    span {
+      color: $c-secondary;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 24px;
+    }
+  }
+
+  &__p {}
+
+  &__list {
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+      position: relative;
+      top: -2px;
+    }
+
+    span {}
+  }
+
+  &__box-input-btn {
+    max-width: 550px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__box-input {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 30px;
+  }
+
+  // form
+  &__form {
+    margin-bottom: 30px;
+
+    label {
+      font-weight: 300;
+    }
+
+    input {
+      margin-right: 10px;
+      background-color: transparent;
+    }
+  }
+
+  &__error {
+    color: $c-secondary;
+  }
+
+  &__btn {
+    max-width: 180px;
+    flex-shrink: 0;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__box-code-btn {
+    padding-bottom: 40px;
+  }
+
+  &__footer-text {
+    color: #888888;
+
+    a {
+      @extend %a;
+    }
+  }
+}
+
+.modal-demo {
+  .modal {
+    &__box-input-btn {
+      @media (max-width: $sm) {
+        flex-direction: column;
+      }
+    }
+
+    &__box-input {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.modal-discount {
+
+  .modal {
+
+    &__content {
+      display: flex;
+    }
+
+    &__img {
+      width: 210px;
+      min-width: 210px;
+      position: relative;
+
+      @media (max-width: $sm) {
+        display: none;
+      }
+    }
+
+    &__img-boy {
+      position: absolute;
+      top: 50px;
+      right: 30px;
+    }
+
+    &__img-product {
+      position: absolute;
+      top: 150px;
+      right: 50px;
+    }
+
+    &__p {
+      max-width: 340px;
+    }
+
+    &__box-input-btn {
+      @media (max-width: $md) {
+        flex-direction: column;
+      }
+    }
+
+    &__text {
+
+      .modal {
+
+        &__img {
+          display: none;
+
+          @media (max-width: $sm) {
+            display: block;
+            margin-top: 25px;
+          }
+        }
+
+        &__img-product {
+          position: relative;
+          top: 0;
+        }
+      }
+    }
+
+    &__box-form-disc {}
+
+    &__box-input {
+      margin-bottom: 20px;
+    }
+
+    &__form {
+      input {
+        @media (max-width: $md) {
+        }
+      }
+    }
+
+    &__box-code-btn {
+      display: none;
+
+      div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__code-disc {
+      font-size: 35px;
+      color: $c-secondary;
+      letter-spacing: 10px;
+      margin-right: 30px;
+      border-bottom: 2px solid $c-secondary;
+      text-transform: uppercase;
+    }
+
+    &__btn-copy {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 20px;
+        height: 15px;
+        border-bottom: 1px solid $c-secondary;
+        border-left: 1px solid $c-secondary;
+        opacity: 0;
+        transition: .3s;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 20px;
+        height: 15px;
+        border-top: 1px solid $c-secondary;
+        border-right: 1px solid $c-secondary;
+        opacity: 0;
+        transition: .3s;
+      }
+
+      &._active {
+        background-color: $bc-button-hover;
+
+        &::before {
+          opacity: 1;
+          transform: translate(-5px, 5px);
+        }
+
+        &::after {
+          opacity: 1;
+          transform: translate(5px, -5px);
+        }
+      }
+    }
+
+
+    &__footer-text {
+      position: relative;
+      left: -200px;
+
+      @media (max-width: 890px) {
+        left: 0;
+      }
+    }
+  }
+}
+
+.modal-premium {
+
+  .modal {
+
+    &__img-boy {
+      position: absolute;
+      bottom: 0;
+      right: 50px;
+      width: 144px;
+
+      @media (max-width: 850px) {
+        right: 10px;
+        width: 120px;
+        bottom: 50px;
+      }
+
+      @media (max-width: $md) {
+        display: none;
+      }
+    }
+
+    &__box-title {
+      display: flex;
+      align-items: center;
+
+      &+.modal__p {
+        margin-top: 15px;
+      }
+
+      @media (max-width: $sm) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &__logo {
+      max-width: 310px;
+      width: 100%;
+      position: relative;
+      top: -3px;
+      margin-right: 5px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__title-text {
+      color: $c-secondary;
+      font-size: 48px;
+
+      @media (max-width: $sm) {
+        font-size: 40px;
+      }
+    }
+
+    &__p {
+
+      &._theme_premium {
+        font-size: 28px;
+        line-height: 1.1;
+
+        span {
+          color: $c-secondary;
+        }
+      }
+
+      &._theme_prem-two {
+        max-width: 510px;
+      }
+    }
+
+    &__box-input-btn {
+      max-width: 580px;
+
+      @media (max-width: $sm) {
+        flex-direction: column;
+      }
+    }
+
+    &__form {
+      input {
+        @media (max-width: $sm) {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &__btn {
+      max-width: 220px;
+    }
+  }
+}
+
+.modal-video {
+
+  .modal__close svg {
+    fill: rgba(255, 255, 255, 0.6);
+    transition: .3s;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+      fill: #fff;
+    }
+  }
+
+}
+
+.video-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+
+// ================================================================= modal-registr
+.modal-registr {
+
+  .modal {
+    &__box-input-btn {
+      @media (max-width: $sm) {
+        flex-direction: column;
+      }
+    }
+
+    &__title {
+      span {
+        color: $c-secondary;
+      }
+    }
+
+    &__serv-response {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    &__start-watching {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+
+  &__content-1 {
+    display: block;
+
+    .modal__box-input {
+      @media (max-width: $sm) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__content-2 {
+    display: none;
+
+    .modal__box-input {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__form {
+
+    .modal__btn {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+
+  
+
+  &__btn {
+    @extend %a;
+  }
+}

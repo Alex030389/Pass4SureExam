@@ -1,0 +1,93 @@
+.certific {
+
+  &__h1 {}
+
+  &__list {
+    column-count: 2;
+    column-gap: 100px;
+    margin-bottom: 30px;
+
+    @media (max-width: 1300px) {
+      column-gap: 50px;
+    }
+
+    @media (max-width: $lg) {
+      column-count: 1;
+    }
+    @media (max-width: $sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    display: flex;
+
+    @media (max-width: $lg) {
+      // display: inline-block;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 3px 52px 2px 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: .3s;
+    position: relative;
+
+    &:hover {
+      background-color: $c-link-hover;
+    }
+
+    &_popular {
+      &::after {
+        content: "POPULAR";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        margin-left: 4px;
+        padding: 0px 3px 0px;
+        line-height: 11px;
+        border-radius: 2px;
+        font-size: 11px;
+        background-color: $c-secondary;
+        color: white;
+      }
+    }
+
+    @media (max-width: $lg) {
+      // white-space: normal;
+      // overflow: ;
+    }
+  }
+
+  &__box-btn {
+  }
+
+  &__btn-more {
+    display: block;
+
+    svg {
+      transition: 2s linear;
+    }
+
+    &.active {
+
+      svg {
+        animation: load 2s linear;
+      }
+    }
+  }
+}
+
+@keyframes load {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

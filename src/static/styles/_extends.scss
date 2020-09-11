@@ -1,0 +1,15 @@
+// @extend %h-reset;
+
+%h-reset {
+  margin: 0;
+}
+
+
+%a {
+  border-bottom: 1px solid $c-main_03;
+  transition: .3s;
+
+  &:hover {
+    border-bottom-color: $c-main;
+  }
+}

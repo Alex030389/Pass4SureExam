@@ -1,0 +1,44 @@
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 12px;
+  }
+
+  &__input {
+    padding: 11px 48px 11px 12px;
+    border: 1px solid #E4E4E4;
+    border-radius: 2px;
+    width: 100%;
+
+    &::placeholder {
+      color: $c-main;
+      opacity: .5;
+      transition: .3s;
+    }
+
+    &:focus {
+      .search-form__button {
+        display: block;
+      }
+    }
+  }
+
+  &__button {
+    position: absolute;
+    display: none;
+    top: 0px;
+    right: 0;
+    border: 1px solid $c-secondary;
+    background-color: $bc-button;
+    width: 42px;
+    height: 42px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

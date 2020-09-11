@@ -1,0 +1,94 @@
+.reg {
+  height: 100%;
+
+  .wrap {
+    padding-bottom: 50px;
+  }
+
+  &__inner {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__h1 {
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media (max-width: $sm) {
+      text-align: left;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    margin: 10px -5px;
+
+    @media (max-width: $sm) {
+      text-align: left;
+      margin: 10px 0;
+    }
+  }
+
+  &__form {
+    
+    .form__box-checkbox {
+      margin: 25px 0 0 0;
+      
+      label {
+        color: $c-main;
+      }
+    }
+  }
+
+  &__btn-submit {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  &__box-link {
+    margin: 30px 0 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__link {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $c-main-03;
+    transition: .3s;    
+
+    &:hover {
+      border-bottom-color: $c-main;
+    }
+  }
+
+  &__btn-sign {
+  }
+
+  &__footer {
+    text-align: center;
+    color: $c-main-06;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 15px;
+    width: 100%;
+
+    a {
+      color: $c-main;
+      border-bottom: 1px solid $c-main-03;
+      opacity: .6;
+      transition: .3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+}

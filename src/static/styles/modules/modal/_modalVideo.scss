@@ -1,0 +1,146 @@
+.video-box {
+  max-width: 774px;
+  // position: relative;
+  position: absolute;
+  // margin: 0 auto;
+  background-color: #262726;
+  font-family: $ff-player;
+}
+.video-box video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #fff;
+}
+.d-none{
+display: none;
+}
+.mfp-close {
+  font-size: 40px;
+}
+.myControls .btns button:not(.disabled):hover svg path{
+  fill: #48a0f7;
+}
+.myControls svg path{
+  transition: all .25s ease;
+}
+.myControls .btnsTitle{
+  display: flex;
+  align-items: center;
+}
+.myControls .btnsTitle .btns{
+  margin-right: 15px;
+}
+.myControls .speedList.show .speedElements{
+  display: block;
+}
+.myControls .speedList{
+  font-size: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c3d3c;
+  border-radius: 10em;
+  min-width: 75px;
+  cursor: pointer;
+  position: relative;
+padding: 7px 0;
+  transition: all .25s ease;
+}
+.myControls .speedList:hover{
+  background-color: #010101;
+  color: #48a0f7;
+}
+.myControls .speedList:hover svg path{
+  fill: #48a0f7;
+}
+
+.myControls .speedList .speedElements{
+  position: absolute;
+  bottom: 140%;
+  display: none;
+  left: 0;
+  background-color: #010101;
+  border-radius: 18px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.myControls .speedList .speedElements .speedEl{
+  color: #fff;
+  margin-bottom: 10px;
+}
+.myControls .speedList .speedElements .speedEl.active{
+  color: #48a0f7;
+}
+.myControls .speedList .speedElements .speedEl:last-child{
+  margin-bottom: 0;
+}
+.myControls .speedList svg{
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+}
+.myControls .speedList svg path{
+  fill: #fff;
+}
+.myControls .headerVideo{
+  color: #fff;
+  font-size: 14px;
+}
+.popup.popup_video{
+  background-color: #262726;
+}
+.myControls{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #262726;
+}
+.myControls button svg{
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: -1px;
+}
+.myControls button svg path{
+  fill: #fff;
+}
+.myControls .btns button{
+  width: 32px;
+  height: 32px;
+  border-radius: 10em;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c3d3c;
+  border: none;
+  margin-right: 10px;
+  display: inline-block;
+  transition: all .25s ease;
+cursor: pointer;
+}
+.myControls .btns button:last-child{
+  margin-right: 0;
+}
+.myControls .btns button.disabled{
+  background-color: #3c3d3c
+}
+.myControls .btns button.disabled svg path{
+  fill: #b1b1b1;
+}
+.myControls #btnnext svg{
+  transform: scale(-1,1);
+}
+.speedList button{
+  font-size:16px;
+}
+@media (max-width: 767.98px){
+  .myControls .headerVideo{
+      display: none;
+  }
+}

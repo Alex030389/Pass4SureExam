@@ -1,0 +1,59 @@
+.pagination {
+
+  &__list {
+    display: flex;
+    margin: 0 -3px;
+  }
+
+  &__item {
+    margin: 0 3px;
+    position: relative;
+
+    &._underline {
+      border-bottom: 1px solid $c-main-03;
+      transition: .3s;
+
+      &:hover {
+        border-color: $c-main;
+      }
+
+      @media (max-width: $sm) {
+        font-size: 16px;
+      }
+    }
+
+    &._active {
+      color: $c-secondary;
+
+      .pagination__link {
+        color: $c-secondary;
+      }
+    }
+
+    &._arrow {
+
+      &._prev {
+        margin-left: 8px;
+        margin-right: 14px;
+      }
+
+      &._next {
+        margin-left: 14px;
+        margin-right: 8px;
+      }
+    }
+
+    @media (max-width: $sm) {
+      font-size: 20px;
+      margin: 0 5px;
+    }
+  }
+
+  &__link {
+
+    pre {
+      display: inline;
+      font-size: 14px;
+    }
+  }
+}

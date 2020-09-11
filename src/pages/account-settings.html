@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+//= modules/head.html
+
+<body>
+
+  //= modules/header/header.html
+
+  <main class="content">
+    <div class="wrap">
+      //= modules/breadcrumb.html
+    </div>
+    <section class="section account">
+      <div class="wrap">
+
+        <div class="account__box-nav-content">
+
+          <ul class="account__nav-vert nav-vert">
+
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link _active">
+                <svg class="product__icon" aria-hidden="true">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#check"></use>
+                </svg>
+                <span>My Products</span></a>
+            </li>
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link">
+                <svg class="product__icon" aria-hidden="true">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#check"></use>
+                </svg>
+                <span>Orders / Invoices</span></a>
+            </li>
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link">
+                <svg class="product__icon" aria-hidden="true">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#check"></use>
+                </svg>
+                <span>Account Settings</span></a>
+            </li>
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link">Log Out</a>
+            </li>
+
+            <!-- /account__nav-vert-->
+          </ul>
+
+          <div class="accont__a-content a-content">
+            <h1 class="a-content__h1">Account Settings</h1>
+            <form class="a-content__form req-exam__form reg__form form">
+              <p>
+                <label>
+                  Full Name*
+                  <input class="form__input" type="text" name="name" value="Alex Ka">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Email*
+                  <input class="form__input" type="email" name="email" value="x01z@mail.ru">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Password*
+                  <input class="form__input" type="password" name="password" placeholder="xxxxxxxx">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Retype Password*
+                  <input class="form__input" type="password" name="password_confirmation" placeholder="xxxxxxxx">
+                </label>
+              </p>
+
+              <button class="req-exam__btn btn btn_light" type="submit">Submit</button>
+
+            </form>
+
+          </div>
+        </div>
+
+        <!-- wrap -->
+      </div>
+    </section>
+  </main>
+
+  //= modules/footer/footer.html
+
+  //= modules/scripts.html
+
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+//= modules/head.html
+
+<body>
+
+  //= modules/header/header.html
+
+  <main class="content">
+    <div class="wrap">
+      //= modules/breadcrumb.html
+    </div>
+    <section class="section account">
+      <div class="wrap">
+
+        <div class="account__box-nav-content">
+
+          <ul class="account__nav-vert nav-vert">
+
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link _active">
+                <svg class="product__icon" aria-hidden="true">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#check"></use>
+                </svg>
+                <span>My Products</span></a>
+            </li>
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link">
+                <svg class="product__icon" aria-hidden="true">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#check"></use>
+                </svg>
+                <span>Orders / Invoices</span></a>
+            </li>
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link">
+                <svg class="product__icon" aria-hidden="true">
+                  <use xlink:href="static/images/sprite/symbol/sprite.svg#check"></use>
+                </svg>
+                <span>Account Settings</span></a>
+            </li>
+            <li class="nav-vert__item">
+              <a href="#" class="nav-vert__link">Log Out</a>
+            </li>
+
+            <!-- /account__nav-vert-->
+          </ul>
+
+          <div class="accont__a-content a-content">
+            <h1 class="a-content__h1">Orders / Invoices</h1>
+            <!-- <div class="a-content__not-order">
+              <span>You have not any Active order for Test Engine</span>
+            </div>
+            <div class="a-content__text">
+              <p>Due to security reasons all products are now delivered thru website <a href="mailto:#">Train4sure.com:</a> you can access them <a href="mailto:#">here.</a></p>
+              <p>Your account at Train4sure.com was created automatically: please check your mailbox.<br>Or you can retrieve your Train4sure.com account password <a href="mailto:#">here.</a> </p>
+            </div>
+            <div class="a-content__img">
+              <img src="static/images/account/people-2.png" alt="people-1">
+            </div> -->
+             
+            <!-- ============================================================ page order -->
+            <div class="order" data-url="www.mysite">
+
+              <table>
+                  <tr>
+                    <th>Invoices / Order</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td><a class="order__link" href="#" data-invoice="436365">436365</a></td>
+                    <td>Mar 10, 19</td>
+                    <td>$19,99</td>
+                    <td>
+                      <div class="order__box-btn">
+                        <a class="order__btn js-open-inv btn btn_light btn_small">View</a>
+                        <a class="order__btn js-print-inv btn btn_light btn_small">Print</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a class="order__link" href="#">436365</a></td>
+                    <td>Mar 10, 19</td>
+                    <td>$19,99</td>
+                    <td>
+                      <div class="order__box-btn">
+                        <a class="order__btn js-open-inv btn btn_light btn_small">View</a>
+                        <a class="order__btn js-print-inv btn btn_light btn_small">Print</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a class="order__link" href="#">436365</a></td>
+                    <td>Mar 10, 19</td>
+                    <td>$19,99</td>
+                    <td>
+                      <div class="order__box-btn">
+                        <a class="order__btn js-open-inv btn btn_light btn_small">View</a>
+                        <a class="order__btn js-print-inv btn btn_light btn_small">Print</a>
+                      </div>
+                    </td>
+                  </tr>
+
+              </table>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- wrap -->
+      </div>
+    </section>
+  </main>
+
+  //= modules/footer/footer.html
+
+  //= modules/scripts.html
+
+</body>
+
+</html>

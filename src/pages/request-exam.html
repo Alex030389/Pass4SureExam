@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+//= modules/head.html
+
+
+<body>
+
+  //= modules/header/header.html
+
+  <main class="content">
+    <div class="wrap">
+      //= modules/breadcrumb.html
+    </div>
+    <section class="section req-exam">
+      <div class="wrap">
+
+        <h1 class="req-exam__h1">Didn’t Find Your Exam on Pass4sure? Request Exam</h1>
+        <p>Request your exam here and Pass4sure will get you notified when the exam gets released at the site.</p>
+        <p>Please provide code of the exam you are interested in and your email address so we can inform you when
+          requested exam will become available. Thanks!</p>
+
+        <form class="req-exam__form reg__form form">
+          <p>
+            <label>
+              Exam Code
+              <input class="form__input" type="text" name="code" placeholder="code">
+            </label>
+          </p>
+          <p>
+            <label>
+              Enter Your Email Address
+              <input class="form__input" type="email" name="email" placeholder="email">
+            </label>
+          </p>
+          <p>
+            <label>
+              Your phone
+              <input class="form__input" type="tel" id="phone-flags" name="phone">
+            </label>
+          </p>
+
+          <button class="req-exam__btn btn btn_light" type="submit">Request Exam</button>
+
+        </form>
+
+        <div class="req-exam__img">
+          <img src="static/images/request-exam/didnt-find.png" alt="didn't find">
+        </div>
+
+        <!-- wrap -->
+      </div>
+    </section>
+  </main>
+
+  //= modules/footer/footer.html
+
+  //= modules/scripts.html
+
+</body>
+
+</html>

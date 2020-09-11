@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+//= modules/head.html
+
+<body>
+
+  //= modules/header/header.html
+
+  <main class="content">
+    <div class="wrap">
+      //= modules/breadcrumb.html
+    </div>
+    <section class="section reg">
+      <div class="wrap">
+
+        <div class="reg__inner">
+          <h1 class="reg__h1">Register Now</h1>
+          <p class="reg__desc">Not already a registered Pass4Sure member? Sign Up fast and simple using your email
+            address and create a password below:</p>
+
+          <form class="register-form reg__form form" action="#" novalidate>
+            <p>
+              <label>Email*
+                <input class="form__input" type="email" name="email" placeholder="Enter your email">
+              </label>
+            </p>
+            <p>
+              <label>Password*
+                <input class="form__input" type="password" name="password" placeholder="Enter your password">
+              </label>
+            </p>
+            <p>
+              <label>Confirm Password*
+                <input class="form__input" type="password" name="password_confirmation" placeholder="Enter your password">
+              </label>
+            </p>
+            <p class="form__box-checkbox">
+              <input class="form__checkbox-input" type="checkbox" name="checkbox" id="form__checkbox-input">
+              <label class="form__checkbox-label" for="form__checkbox-input">I’d like to receive newsletters from
+                Pass4Sure.com to get more training information</label>
+            </p>
+            <button class="reg__btn-submit btn btn_red" type="submit">Sign Up Now</button>
+          </form>
+
+          <div class="reg__box-link">
+            <a class="reg__link" href="#">Privacy Policy</a>
+          </div>
+
+          <a class="reg__btn-sign btn btn_light" href="#">Sign in</a>
+
+          <!-- reg__inner -->
+        </div>
+
+
+        <p class="reg__footer">If you encounter ane problems with accessing your account or signing in, please contsct
+          customer support: <a href="mailto:">support@pass4sure.com</a></p>
+
+        <!-- wrap -->
+      </div>
+    </section>
+
+  </main>
+
+  //= modules/footer/footer-small.html
+
+  //= modules/scripts.html
+
+</body>
+
+</html>
