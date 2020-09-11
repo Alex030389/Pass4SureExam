@@ -34,6 +34,7 @@
     "intl-tel-input": "^16.0.2",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
+    "print-js": "^1.1.1",
     "selectric": "^1.13.0",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9"
